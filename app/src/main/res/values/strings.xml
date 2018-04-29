@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Search github user</string>
+    <string name="internet">No internet connection, Please make sure your device is connected to the internet</string>
+    <string name="enter_the_github_username_to_be_searched">enter the github username</string>
+    <string name="search">Search</string>
+</resources>

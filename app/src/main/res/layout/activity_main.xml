@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delaroystudios.githubuser.controller.MainActivity">
+
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="286dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="88dp"
+      android:layout_marginStart="88dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="@string/enter_the_github_username_to_be_searched"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteY="0dp" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/search"
+      android:onClick="loadjsonwithname"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="0dp" />
+
+  <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="57dp"
+    android:id="@+id/swipeContainer"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="60dp"
+          android:backgroundTint="#f2f2f2"
+          tools:context="com.delaroystudios.githubuser.controller.MainActivity"
+          tools:showIn="@layout/activity_main">
+
+      </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disconnected"
+        android:text="@string/internet"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+</android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>
