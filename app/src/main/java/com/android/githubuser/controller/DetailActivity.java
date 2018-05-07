@@ -16,9 +16,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.android.githubuser.R;
 
-/**
- * Created by delaroy on 3/22/17.
- */
 public class DetailActivity extends AppCompatActivity {
     TextView Link, Username;
     Toolbar mActionBarToolbar;
