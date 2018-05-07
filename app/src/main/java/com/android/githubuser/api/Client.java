@@ -3,9 +3,6 @@ package com.android.githubuser.api;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by delaroy on 3/22/17.
- */
 public class Client {
 
     public static final String BASE_URL = "https://api.github.com";
