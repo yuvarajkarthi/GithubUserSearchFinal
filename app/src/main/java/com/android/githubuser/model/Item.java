@@ -3,9 +3,6 @@ package com.android.githubuser.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by delaroy on 3/22/17.
- */
 public class Item {
 
     @SerializedName("login")
